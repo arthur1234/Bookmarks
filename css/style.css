@@ -1,0 +1,211 @@
+.all{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+.wrapper{
+	width: 1000px;
+	margin: 0 auto;
+	border: 1px solid blue;
+	overflow: hidden;
+}
+.top{
+	
+	width: 1000px;
+	height: 80px;
+	border-bottom: 1px solid green;
+	background-color: GoldenRod;
+	padding-top: 20px;
+}
+.top ul{
+	margin: 0;
+	
+	
+}
+.top ul li{
+	list-style: none;
+	display: inline;
+	padding: 10px;
+	margin-left: 10px;
+	border: 1px solid green;
+	border-radius: 3px;
+	position: relative;
+	cursor: pointer;
+}
+
+.top ul li button{
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	left: 1%;
+	height: 40px;
+	width: 98%;
+	border: 1px solid #000;
+	border-radius: 0px 0px 3px 3px ;
+	color: red;
+}
+.top ul li:hover>button{
+	visibility: visible;
+}
+.left-side{
+	height: 500px;
+	background-color: orange;
+	width: 230px;
+	float: left;
+}
+.right-side{
+	width: 770px;
+	background-color: #bbb;
+	height: 500px; 
+	float: left;
+}
+.createdir{
+	height: 30px;
+	margin: 0 auto;
+	padding-top: 10px;
+	text-align: center;
+	position: relative;
+	top: 40px;
+	background-color: #ccc;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px dotted green;
+	border-radius: 3px;
+	width: 156px;
+}
+.createDirwindow{
+	width: 230px;
+	height: 150px;
+	background-color: #aaa;
+	text-align: center;
+	position: relative;
+	display: none;
+	padding-top: 20px;
+	top: 14px;
+}
+.createDirwindow input{
+	margin: 0px;
+	position: relative;
+	
+	width: 200px;
+}
+.createNewBtn{
+	width: 202px;
+	position: relative;
+	top: -8px;
+}
+
+.createdir:hover   .createDirwindow{
+	display: block;
+}
+
+.createdir:hover   .createDirwindow input:focus{
+	background-color: yellow;
+
+}
+
+.dirWrapper{
+	position: relative;
+	top: 100px;
+	left: 40px;
+}
+
+
+.positionInArrObjects{
+	width: 240px;
+	height: 40px;
+	background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+.clear{
+	clear: both;
+}
+
+
+
+
+
+
+
+
+.directory {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 1;
+  position: relative;
+}
+.directory ul,
+.directory ul li,
+.directory ul ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+
+.directory ul{
+	background-color: #ccc;
+	color: #fff;
+	width: 200px;
+	list-style: none;
+	border: 1px solid blue;
+	position: relative;
+}
+.directory ul li{
+	border-bottom:1px solid blue;
+	padding: 5px 0px 5px 20px;
+	cursor: pointer;
+
+}
+.directory li.last{
+	border-bottom:none;
+
+}
+
+.directory a, .directory a:hover{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	width: 100%;
+}
+.directory ul li.has-sub>a:after{
+	content: '>> ';
+	float: right;
+}
+
+.directory ul ul{
+	position: absolute;
+	left:99%;
+	margin-top: -22px;
+	visibility: hidden;
+}
+
+.directory ul li.has-sub:hover> ul{ 
+	visibility: visible;
+}
+
+
+
+.submit{
+	width: 20px;
+	height: 20px;
+	background-color: green;
+	float: right;
+	position: relative;
+	top: -2px;
+	right: 5px;
+	border-radius: 10px;
+}
